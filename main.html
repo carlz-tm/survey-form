@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" media="screen" href="main.css" />
+  </head>
+
+  <body id="main">
+    <div class="container">
+      <header class="header">
+        <h1 id="title">Giggle Survey Form</h1>
+        <p id="description">Thank you for taking the time to improve our platform</p>
+      </header>
+
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">Name</label>
+          <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required />
+        </div>
+
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required />
+        </div>
+
+        <div class="form-group">
+          <label id="number-label" for="number">Age<span>&nbsp; (optional)</span></label>
+          <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Age" />
+        </div>
+
+        <div class="form-group">
+          <p>Which option best describes your current role?</p>
+          <select id="dropdown" name="role" class="form-control" required>
+            <option disabled selected value>Select current role</option>
+            <option value="student">Student</option>
+            <option value="government">Government Employee</option>
+            <option value="non-government">Non-Government Employee</option>
+            <option value="freelancer">Freelancer</option>
+            <option value="preferNo">Prefer not to say</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>Do you get excited when you see babies giggling?</p>
+          <label> <input name="user-recommend" value="definitely" type="radio" class="input-radio" checked />Definitely</label>
+          <label> <input name="user-recommend" value="maybe" type="radio" class="input-radio" />Maybe</label>
+
+          <label><input name="user-recommend" value="not-sure" type="radio" class="input-radio" />Not sure</label>
+        </div>
+
+        <div class="form-group">
+          <p>What is your favorite babies gender?</p>
+          <select id="most-like" name="mostLike" class="form-control" required>
+            <option disabled selected value>Select an option</option>
+            <option value="boy">Boy</option>
+            <option value="girl">Girl</option>
+            <option value="both">Both</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>
+            What would you do to see babies giggling?
+            <span>(Check all that apply)</span>
+          </p>
+
+          <label><input name="prefer" value="tickling" type="checkbox" class="input-checkbox" />Tickling</label>
+          <label> <input name="prefer" value="funny-noises" type="checkbox" class="input-checkbox" />Funny noises</label>
+          <label><input name="prefer" value="gentle-touches" type="checkbox" class="input-checkbox" />Gentle touches</label>
+          <label><input name="prefer" value="noisemakers" type="checkbox" class="input-checkbox" />Noisemakers</label>
+          <label><input name="prefer" value="fun-games" type="checkbox" class="input-checkbox" />Fun games</label>
+          <label><input name="prefer" value="belly-raspberries" type="checkbox" class="input-checkbox" />Belly raspberries</label>
+          <label><input name="prefer" value="eskimo-kisses" type="checkbox" class="input-checkbox" />Eskimo kisses</label>
+          <label><input name="prefer" value="sing" type="checkbox" class="input-checkbox" />Sing</label>
+          <label><input name="prefer" value="funny-faces" type="checkbox" class="input-checkbox" />Funny faces</label>
+          <label><input name="prefer" value="play-peekaboo" type="checkbox" class="input-checkbox" />Play peekaboo</label>
+          <label><input name="prefer" value="start-the-ball-rolling" type="checkbox" class="input-checkbox" />Start the ball rolling</label>
+        </div>
+
+        <div class="form-group">
+          <p>Any comments or suggestions?</p>
+          <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your messages here..."></textarea>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">Submit</button>
+        </div>
+      </form>
+    </div>
+
+    <footer>
+      <h6>Get our apps at <a id="apps" href="https://play.google.com/store/apps/details?id=com.KT.baby_laugh&hl=en_US&gl=US" target="_blank" style="text-decoration: none; color: #fffb02">Play Store</a>.</h6>
+    </footer>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
