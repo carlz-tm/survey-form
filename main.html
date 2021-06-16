@@ -10,11 +10,11 @@
     <link rel="stylesheet" media="screen" href="main.css" />
   </head>
 
-  <body id="main">
+  <body>
     <div class="container">
       <header class="header">
-        <h1 id="title">Giggle Survey Form</h1>
-        <p id="description">Thank you for taking the time to improve our platform</p>
+        <h1 id="title" class="text-center">Giggle Survey Form</h1>
+        <p id="description" class="description text-center">Thank you for taking the time to fill out our survey</p>
       </header>
 
       <form id="survey-form">
@@ -29,7 +29,7 @@
         </div>
 
         <div class="form-group">
-          <label id="number-label" for="number">Age<span>&nbsp; (optional)</span></label>
+          <label id="number-label" for="number">Age<span class="clue">(optional)</span></label>
           <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Age" />
         </div>
 
@@ -47,7 +47,7 @@
         </div>
 
         <div class="form-group">
-          <p>Do you get excited when you see babies giggling?</p>
+          <p>Do you get excited when you hear babies giggling?</p>
           <label> <input name="user-recommend" value="definitely" type="radio" class="input-radio" checked />Definitely</label>
           <label> <input name="user-recommend" value="maybe" type="radio" class="input-radio" />Maybe</label>
 
@@ -66,20 +66,30 @@
 
         <div class="form-group">
           <p>
-            What would you do to see babies giggling?
-            <span>(Check all that apply)</span>
+            What would you do to hear babies giggling?
+            <span class="clue">(Check all that apply)</span>
           </p>
 
-          <label><input name="prefer" value="tickling" type="checkbox" class="input-checkbox" />Tickling</label>
-          <label> <input name="prefer" value="funny-noises" type="checkbox" class="input-checkbox" />Funny noises</label>
-          <label><input name="prefer" value="gentle-touches" type="checkbox" class="input-checkbox" />Gentle touches</label>
-          <label><input name="prefer" value="noisemakers" type="checkbox" class="input-checkbox" />Noisemakers</label>
-          <label><input name="prefer" value="fun-games" type="checkbox" class="input-checkbox" />Fun games</label>
-          <label><input name="prefer" value="belly-raspberries" type="checkbox" class="input-checkbox" />Belly raspberries</label>
-          <label><input name="prefer" value="eskimo-kisses" type="checkbox" class="input-checkbox" />Eskimo kisses</label>
           <label><input name="prefer" value="sing" type="checkbox" class="input-checkbox" />Sing</label>
+
+          <label><input name="prefer" value="tickling" type="checkbox" class="input-checkbox" />Tickling</label>
+
+          <label><input name="prefer" value="fun-games" type="checkbox" class="input-checkbox" />Fun games</label>
+
           <label><input name="prefer" value="funny-faces" type="checkbox" class="input-checkbox" />Funny faces</label>
+
+          <label><input name="prefer" value="funny-noises" type="checkbox" class="input-checkbox" />Funny noises</label>
+
+          <label><input name="prefer" value="noisemakers" type="checkbox" class="input-checkbox" />Noisemakers</label>
+
+          <label><input name="prefer" value="eskimo-kisses" type="checkbox" class="input-checkbox" />Eskimo kisses</label>
+
           <label><input name="prefer" value="play-peekaboo" type="checkbox" class="input-checkbox" />Play peekaboo</label>
+
+          <label><input name="prefer" value="gentle-touches" type="checkbox" class="input-checkbox" />Gentle touches</label>
+
+          <label><input name="prefer" value="belly-raspberries" type="checkbox" class="input-checkbox" />Belly raspberries</label>
+
           <label><input name="prefer" value="start-the-ball-rolling" type="checkbox" class="input-checkbox" />Start the ball rolling</label>
         </div>
 
@@ -95,7 +105,7 @@
     </div>
 
     <footer>
-      <h6>Get our apps at <a id="apps" href="https://play.google.com/store/apps/details?id=com.KT.baby_laugh&hl=en_US&gl=US" target="_blank" style="text-decoration: none; color: #fffb02">Play Store</a>.</h6>
+      <h6>Get our apps at <a id="apps" href="https://play.google.com/store/apps/details?id=com.KT.baby_laugh&hl=en_US&gl=US" target="_blank">Play Store</a>.</h6>
     </footer>
 
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
